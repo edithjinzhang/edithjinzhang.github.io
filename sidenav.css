@@ -6,9 +6,14 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #A2D9CE;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #F1948A;
 }
 
 /* Page content */
