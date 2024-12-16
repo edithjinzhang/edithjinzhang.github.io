@@ -15,12 +15,16 @@
     
     <h2> Research </h2> 
     <p>
-      I'm working with the intersection of large-graph limits, variational calculus, and nonlocal analysis. 
+      I'm working in the intersection of large-graph limits, variational calculus, and nonlocal analysis. 
       My current research involves graph Ginzburg-Landau theory and nonlocal perimeter. 
       This research has applications in graph cut problems, image segmentation and social network analysis, among other questions. 
       This research is in collaboration with <a href="https://sites.google.com/view/jamesmichaelscott/home">James Scott</a>, 
       <a href="http://www.columbia.edu/~qd2125/">Qiang Du</a>, and <a href="https://www.math.ucla.edu/~mason/">Mason Porter</a>. 
     </p>
+    <p>Graphons are a notion of large-graph limit (and the notion of graph-to-graphon convergence 
+        is defined with respect to a norm called "cut norm"). 
+    </p>
+    
     <p>
       The next piece of this project is to consider dynamics on graphons, in particular the graphon heat equation as studied by 
       <a href="https://arxiv.org/pdf/1302.5804.pdf">Medvedev</a> and the graphon Allen--Cahn equation as an extension of the work by 
@@ -52,9 +56,10 @@
     <ul>
       <li> Ginzburg--Landau (GL) theory, which was originally developed to model superconductors, has more recently been applied to 
         a variety of applications including graph clustering, image processing, and min-cut/max-flow problems. These applications typically
-        use the graph GL functional. Graphons are a notion of large-graph limit (and the notion of graph-to-graphon convergence 
-        is defined with respect to a norm called "cut norm"). 
-        This paper defines a graphon GL functional, and shows that the minimizers of the graph GL functional converge to the 
+        use the graph GL functional, which is an approximation of the graph-cut functional. The GL functional is the sum of a Dirichlet energy 
+        term, which penalizes the variability of a function, and a double-well potential, which penalizes deviations from the values +1 and -1. 
+        
+        This paper defines a graphon GL functional and shows that the minimizers of the graph GL functional converge to the 
         minimizers of the graphon GL functional. 
       </li>
     </ul>
@@ -62,7 +67,12 @@
     <a href="https://arxiv.org/pdf/2210.11385.pdf">On Representations of Mean-Field Variational Inference (preprint, 2022)</a>
     <ul>
       <li> Variational inference is an approach to Bayesian inference that is based on an optimization problem. 
-        It is widely-used, but VI algorithms have lacked theoretical guarantees. 
+        It is widely-used, but VI algorithms have lacked theoretical guarantees. The idea of VI is to seek a 
+        constrained minimizer of the distance to the Bayesian posterior, 
+        where the constrained set is the set of product measures (probability measures where each component is independent of all others). 
+        Minimizations in probability space can in principle be approximated by a gradient flow with respect to a Wasserstein metric; in the case 
+        of the unconstrained Bayesian problem, the Wasserstein--gradient flow is a Fokker--Planck equation. 
+        The problem we tackle is: how do we describe the constrained problem as a gradient flow in constrained space? 
         We express variational inference as an approximate Wasserstein gradient flow, and we discuss theoretical implications. </li>
     </ul>
     
@@ -71,7 +81,9 @@
       <li> Mode-connectivity is an interesting property that has been discovered in neural net loss functions, which are high-dimensional and nonconvex. 
       It has been related to a "no bad local minima" property that's been noticed in practice, and is related to overparametrization. 
       This workshop paper demonstrates and begins to explain the existence of mode-connectivity in the ELBO, which is the loss function of 
-        variational inference.  </li>
+        variational inference. This paper began as my final project for a course (and it was nominated by the professor in a "Best Student Project" competition!).
+        The workshop paper is a truncated version of my final project. 
+    </li> 
     </ul>
     
     
