@@ -8,12 +8,12 @@
   left: 0; /*stay to the left */
   background-color: #A2D9CE;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 20px; /* distance from top button from the top */
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px; 
+  padding: 8px 8px 8px 32px;  /* spacing of the buttons of sidenav not sure about the first 3 */ 
   text-decoration: none;
   font-size: 18px;
   color: #A04000;
